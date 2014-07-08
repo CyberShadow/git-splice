@@ -1,0 +1,10 @@
+# Temporary files
+*.exe
+*.ilk
+*.pdb
+
+# Binaries
+git-splice
+
+# Output
+/result/
