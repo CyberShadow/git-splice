@@ -4,7 +4,8 @@
 *.pdb
 
 # Binaries
-git-splice
+/git-splice-submodule
+/git-splice-subtree
 
 # Output
 /result/

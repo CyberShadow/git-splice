@@ -68,14 +68,7 @@ void main(string[] args)
 				throw new Exception("Unknown ref kind: " ~ name);
 	}
 
-	if ("result".exists)
-	{
-		version (Windows)
-			execute(["rm", "-rf", "result"]); // Git creates "read-only" files
-		else
-			rmdirRecurse("result");
-	}
-	mkdir("result");
+	recreateEmptyDirectory("result");
 
 	auto repo = new Repository("result");
 
